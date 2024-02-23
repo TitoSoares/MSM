@@ -1,0 +1,239 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.DivTela{
+    height:100vh;
+    background-color: #fff;
+}
+/* Cabecalho */
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    .HeadCabecalho{
+    background-color: #3498db;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    }
+
+    .DivCabecalho {
+    display: flex;
+    text-align: center;
+    margin-right: 550px
+  }
+
+  .ImgCabecalho{
+    height: 32px;
+    width: 32px;
+    margin-left: 50px;
+  }
+
+  .ItemCabecalho {
+    margin: 0 20px;
+  }
+
+  .ItemCabecalho a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .ItemCabecalho a:hover {
+    color: #2ecc71;
+  }
+
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+/* Login */
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    .telalogin{
+    display: flex;
+    flex-direction:row;
+    height: 92.50vh;
+    }
+
+    /* DivLeftLogin */
+    /* ==================================== */
+
+        
+        .TxtMSMLogin{
+            font-size: 80px;
+            margin-top: 20px;
+        }
+
+        .TxtLeftLogin{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .ImgLeftLogin{
+            width:280px;
+            height:280px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top:50px;
+        }
+
+    /* DivRightLogin */
+    /* ==================================== */
+        .DivRightLogin{
+            align-items: center;
+            display: flex;
+            flex-direction:column;
+            background-color: #d6eaf8;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 350px;
+            height: 600px;
+            margin-top: 60px;
+            margin-left: 50px;
+        }
+
+        .ImgRightLogin{ 
+            margin-top: 10px;
+            margin-bottom:55px;
+            width: 200px;
+            height:200px;
+            border-radius:50%;
+            background-color: white;
+            border: #3498db solid 2px;
+        }
+
+        .DivBotoesLogin{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .LinkLogin{
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        .LinkLogin:hover {
+            color: #2ecc71;
+        }
+
+        .ButtonLogin{
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;  
+        }
+        .ButtonLogin:hover {
+            background-color: #2ecc71;
+        }
+
+        .InputLogin{
+            width: 75%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            background-color: #ecf0f1;
+            border: none;
+            border-bottom: 2px solid #3498db;
+            border-radius: 5px;
+            outline: none;
+            transition: border-bottom-color 0.3s ease;
+        }
+        .InputLogin:focus {
+            border-bottom-color: #2ecc71;
+        }
+    /* ==================================== */
+
+
+/* Cadastro */
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    /* LinkCadastro */
+    /* ==================================== */
+
+        .DivLinkCadastro{
+            margin-top: 40px;
+            margin-bottom: 5px;
+            margin-right: 15px;
+        }
+
+        .LinkCadastro{
+            text-decoration: none;
+            color: #3498db;
+            margin-top: 40px;
+        }
+        .LinkCadastro:hover {
+        color: #2ecc71;
+        }
+
+    /* DivCadastro */
+    /* ==================================== */
+
+        .DivCadastro {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            margin-left: 40%;
+        }
+
+        .DivInputCadastro {
+            margin-bottom: 10px;
+        }
+
+        .LabelCadastro {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .InputCadastro {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        .InputCadastro:focus {
+            border-bottom-color: #2ecc71;
+            background-color: #d4e6f1;
+        }
+
+        .ButtonCadastro {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 12px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .ButtonCadastro:hover {
+            background-color: #2ecc71;
+        }
+    /* ==================================== */
+
+/* ==================================== *//* ==================================== *//* ==================================== */

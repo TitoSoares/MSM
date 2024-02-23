@@ -1,0 +1,715 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item {
+    margin: 0 20px;
+  }
+
+  .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .menu-item a:hover {
+    color: #2ecc71;
+  }
+
+
+
+/*FlexBox*/
+.container{
+    display: flex;
+    flex-direction: row 
+}
+/*=================================================================================================================================*/
+/*CABEÇALHO*/
+.cabecalho{
+    flex-direction: row;
+    display: flex;
+    align-content:space-around ;
+    width: 100%;
+    height: auto;
+    /*background:linear-gradient(to top,#2B485F,#122029);*/
+    background-color:#52658F;
+    justify-content:space-around;
+    border-bottom: 1px solid black;
+}
+/*Menu*/
+.menu{
+    background-color: #52658F;
+    /* font-family: 'Josefin Sans'; */
+    color:black;
+    font-size: 30px;
+    width: 300px;
+    height:125px;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+.menu:hover{
+    background-color:rgba(71, 87, 122, 0.612)
+}
+.menusao{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+}
+/*Imagem*/
+.imagemMenu{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 104px;
+    height: 104px;
+    border-radius:50%;
+    background-image:url("../../../public/imagem_5_cabecalho.png");
+    background-color:#FFF;
+}
+.imagemMenu:hover{
+   background-color:rgb(155, 155, 155);
+}
+.imagemLogo{
+    border-radius: 25%;
+    width: 100px;
+    height: 100px;
+}
+/*=================================================================================================================================*/
+/*FUNÇÃO GOV*/
+/*Centro da página*/
+.DivCenter{
+    padding-top: 50px;
+    display: flex;
+    width:100%;
+    height:auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+/*Caixa de texto*/
+.caixa1{
+    background-image: url("../../../public/Emissão\ de\ comprovante_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa2{
+    background-image: url("../../../public/Relatorio\ Mensal\ de\ Receitas\ Brutas_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa3{
+    background-image: url("../../../public/Declaração\ Anual\ de\ Faturamento_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa4{
+    background-image: url("../../../public/Nota\ Fiscal_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa5{
+    background-image: url("../../../public/Ceridões\ e\ Comprovantes_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa6{
+    background-image: url("../../../public/Programa\ de\ Simplicação\ do\ Acesso\ a\ Produtos_FuvGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa7{
+    background-image: url("../../../public/Contratação\ de\ Empregados_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa8{
+    background-image: url("../../../public/Registro\ no\ Cadastur_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa9{
+    background-image: url("../../../public/Baixa\ da\ Empresa_FunGov.png");
+    width: 300px;
+    height:400px;
+    border-radius: 10%;
+}
+.caixa1:hover{
+    background-image:url("../../../public/Transpartente-1_FunGov.png");
+}
+.caixa2:hover{
+    background-image:url("../../../public/Transpartente-2_FunGov.png");
+}
+.caixa3:hover{
+    background-image:url("../../../public/Transpartente-3_FunGov.png");
+}
+.caixa4:hover{
+    background-image:url("../../../public/Transpartente-4_FunGov.png");
+}
+.caixa5:hover{
+    background-image:url("../../../public/Transpartente-5_FunGov.png");
+}
+.caixa6:hover{
+    background-image:url("../../../public/Transpartente-6_FunGov.png");
+}
+.caixa7:hover{
+    background-image:url("../../../public/Transpartente-7_FunGov.png");
+}
+.caixa8:hover{
+    background-image:url("../../../public/Transpartente-8_FunGov.png");
+}
+.caixa9:hover{
+    background-image:url("../../../public/Transpartente-9_FunGov.png");
+}
+/*=================================================================================================================================*/
+/*GERENCIAMENTO*/
+/*Funções*/
+.funcoesGen{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    height: auto;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.caixaFuncGen{
+    /* font-family: 'Josefin Sans'; */
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #333A56;
+    height: 70px;
+    width: 98%;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 45px;
+    align-items: center;
+}
+/*=================================================================================================================================*/
+/*CADASTRO*/
+/*Funções*/
+.formatacaoCadastro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.cadastro{
+    height: auto;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.elementoCadastro{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 60px;
+    background-color:rgb(85, 85, 85);
+    border-radius: 50px;
+}
+.caixaCadastro{
+    color:black;
+    font-size: 18px;
+    /* font-family: 'Josefin Sans'; */
+    width: 250px;
+    height: 20px;
+    margin-top:20px;
+    background-color:#FFF;
+    outline: none;
+}
+.botaoRespostas{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.botaosCadastro{
+    margin-top: 10px;
+    margin-right: 5px;
+    width:250px;
+    height: 50px;
+    border-radius: 30px;
+    background-color:rgb(85, 85, 85);
+    font-size:20px;
+    /* font-family: "Josefin Sans"; */
+    border:1px solid black
+    
+}
+.botaosCadastro:hover{
+    background-color:rgba(150, 150, 150, 0.658);
+}
+/*=================================================================================================================================*/
+/*LOGIN*/
+.logincoluna{
+    display: flex;
+    flex-direction:row;
+    height:100%;
+}
+.escritaMEI{
+    display: flex;
+    flex-direction:column;        
+    background-color: #FFF;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    border-right: black solid 1px;    
+    /* font-family: 'Josefin Sans'; */
+}
+.fundoTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt1{
+    /* font-family:'Josefin Sans'; */
+    font-size: 90px;
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+}
+.txt2{
+    /* font-family: 'Josefin Sans'; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 23px;
+}
+.txt3{
+    /* font-family: 'Josefin Sans'; */
+    height: 100px;
+    width: 100%;
+    font-size: 27px;
+    margin-bottom: 50px;
+}
+.img{
+    width:200px;
+    height:200px;
+    background-image:url("../../../public/Imagem_1_log.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom:100px;
+}
+.login{
+    /* font-family: 'Josefin Sans'; */
+    border-left: black solid 1px;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex:4;
+    background-color:#ecf0f1;;
+}
+.imagemLogin{
+    margin-top: 120px;
+    margin-bottom:35px;
+    width: 250px;
+    height:250px;
+    border-radius:50%;
+    background-image:url("../../../public/Imagem_2_log.png");
+    background-color: white;
+    border: black solid 2px;
+    
+}
+.elementoLogin{
+    margin-top:30px;
+    margin-bottom: 15px;
+    width: 50%;
+    height: 55px;
+    background-color:#333A56;
+    border-radius: 50px;
+    font-size: 25px;
+    border: black solid 1px;
+}
+/* .caixaLogin{
+    margin-top: 12px;
+    height: 25px;
+    width: 210px;
+    background-color:#333A56;
+} */
+
+.caixaTexto {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+  }
+
+  .caixaTexto:focus {
+    border-bottom-color: #2ecc71;
+  }
+
+
+.funLogin{    
+    margin-top:80px;
+    display: flex;        
+    justify-content:center;
+    flex-direction:row;
+    width:auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.botaoLogin{
+    border: black solid 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #333A56;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 50px;
+}
+.botaoCancel{
+    border: black solid 1px;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:#333A56;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+}
+.txtBotao{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;  
+}
+
+.txtBotao:hover {
+    background-color: #2ecc71;
+  }
+
+.textFacaCadastro{
+    /* font-family:'Josefin Sans'; */
+    font-size: 20px;    
+    text-decoration: none;
+}
+/*=================================================================================================================================*/
+/*HOME*/
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    width:auto;
+    height:auto;
+    flex-direction:column;
+    background-color:#FFF
+}
+.quemsomos{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#FFF;
+    width:100%;
+    height:auto;
+    margin-top:50px;
+   border-bottom:1px black solid;
+   padding-bottom:5px;
+}
+.escritaQuemSomos{
+    margin-right: 550px;
+    width: 450px;
+    margin-top: 90px;
+    /* font-family: 'Josefin Sans'; */
+    height: 238px;
+    font-size: 55px;
+    background-color: #FFF;
+}
+.imgQuemsomos{
+    margin-right:90px;
+    background-image:url("../../../public/Imagem_3_home.png");
+    height: 308px;
+    width: 400px;
+}
+.meiSemMedo{
+    border-bottom:1px #FFF;
+    padding-left:90px;
+    /* font-family:'Josefin Sans'; */
+    font-size:90px;
+    height:auto;
+    width:(100%-90px);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.textoMei{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+.txtMEI{
+    margin-top: 2%;
+    width:40%;
+    height:auto;
+    font-size: 20px;
+    /* font-family:'Josefin Sans'; */
+}
+.imgMEI{
+    margin-top: 2%;
+    margin-right: 5%;
+    background-image: url("../../../public/Imagem_4_home.png");
+    width: 600px;
+    height: 433px;
+}
+.textofinal{
+    height:auto;
+    width:100%;
+    font-size: 90px;
+    /* font-family:'Josefin Sans'; */
+    
+}
+.botaoLogar_Cadastrar{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+.DivbotaoLogin{
+    width:auto;
+    height:auto;
+    margin-right: 100px;
+}
+.botaosHome{
+    width:400px;
+    height:100px;
+    font-size: 20px;
+    /* font-family: "Josefin Sans"; */
+    border-radius: 50px;
+    background-color:#F7F5E6;
+    border: 1px black solid;
+}
+.botaosHome:hover{
+    background-color:rgba(150, 150, 150, 0.658);
+}
+.DivbotaoCadastro{
+    margin-left: 100px;
+    width:auto;
+    height:auto;
+}
+
+/*=================================================================================================================================*/
+/*PLANO DE FUNDO*/
+.planoFundo{
+    background-color: #fff;
+}
+.planoFundoInfinito{
+    background-color:#FFF;
+    height:100vh;
+}
+/*=================================================================================================================================*/
+/*LINK*/
+.Link{
+    text-decoration:none;
+}
+/*=================================================================================================================================*/
+/*Configuração dos inputs*/
+.Controle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.ConfComponentes{
+    border-radius: 30px;
+    flex-direction:column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width:70%;
+    background-color:rgb(92, 92, 92);
+    border: 1px solid black;
+    margin-top: 40px;
+}
+.ConfComponentesEspecial{
+    border-radius: 30px;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    width:70%;
+    background-color:rgb(92, 92, 92);
+    border: 1px solid black;
+    margin-top: 40px;
+}
+.caixaInput{
+    width:70%;
+    height: 25px;
+    /* font-family: 'Josefin Sans'; */
+    font-size: 20px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.caixaInputEspecial{
+    width:70%;
+    height: 80px;
+    /* font-family: 'Josefin Sans'; */
+    font-size: 40px;
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+.Inputs{
+    /* font-family: 'Josefin Sans'; */
+    width: 250px;
+    outline: none;
+    font-size: 15px;
+    background-color: #FFF;
+    border:1px black solid;
+}
+.InputsEspecial{
+    /* font-family: 'Josefin Sans'; */
+    width: 350px;
+    outline: none;
+    font-size: 30px;
+    background-color: #FFF;
+    border:1px black solid;
+}
+/*=================================================================================================================================*/
+/*Listas dos Componentes*/
+.listagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color:#f8f8f8;
+    border-radius: 30px;
+}
+.listagemEspesifica{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width:55%;
+    height: auto;
+    background-color:#f8f8f8;
+}
+.lista{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);   
+}
+.tiraFormatacao{
+    list-style-type: none;
+    padding-left: 1px;
+}
+.unidadeLista{
+   margin-top: 10px;
+   /* font-family: 'Josefin Sans'; */
+}
+/*=================================================================================================================================*/
+/*TUTORIAL*/
+.paginaTutorial{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.txtTitulo{
+    /* font-family:'Josefin Sans'; */
+    font-size: 60px;
+    width:100%;
+    height:100px;
+}
+.carrossel{
+    height: 980px;
+    width: 1897px;
+}
+.txtTutorial{
+    font-size: 40px;
+    /* font-family: 'Josefin Sans'; */
+    margin-bottom:50px;
+}
+.botaoFunGov{
+    width:400px;
+    height: 100px;
+    /* font-family: 'Josefin Sans'; */
+    font-size: 27px;
+    border-radius: 35px;
+    background-color: #333A56;
+    border: 1px solid black;
+}
+.botaoFunGov:hover{
+    background-color: rgba(128, 128, 128, 0.637);
+}
+/*=================================================================================================================================*/
+/*NOT-FOUND*/
+.notFound{
+    background-image: url("../../../public/notfound.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.botaoNotFound{
+    margin-top: 29%;
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color:#f8f8f8;
+    border: 1px black solid;
+    /* font-family: "Josefin Sans"; */
+}
+.botaoNotFound:hover{
+    background-color:rgba(150, 150, 150, 0.658);
+}
+/*=================================================================================================================================*/
+/*requisicoes*/
+
+.requisicoes{
+    width: 100px;
+}
