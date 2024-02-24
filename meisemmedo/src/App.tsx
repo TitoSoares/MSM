@@ -17,6 +17,8 @@ import PaginaComponenteRelatorio from './Pages/PaginaComponenteRelatorio';
 import Requisicoes from './Pages/requisicoes';
 import { UsuarioLogadoProvider } from './contexts/contextAuth';
 import LoginN from './Pages/Login new';
+import ReqPostArquivo from './Pages/reqPostArquivo';
+import HomeN from './Pages/HomeN';
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       <Routes>
         <Route path='*' element={<NotFound/>}></Route>
         <Route path='/' element={<Home/>}></Route>
+        <Route path='/N' element={<HomeN/>}></Route>
         <Route path='/gov' element={<FuncaoGov/>}></Route>
         <Route path='/gen' element={<Gerenciamento/>}></Route>
         <Route path='/tutorial' element={<Tutorial/>}></Route>
@@ -37,6 +40,7 @@ function App() {
         <Route path='/historico' element={<PaginaComponenteHistorico/>}></Route>
         <Route path='/relatorio' element={<PaginaComponenteRelatorio/>}></Route>
         <Route path='/requisicoes' element={<Requisicoes/>}></Route>
+        <Route path='/req' element={<ReqPostArquivo/>}></Route>
       </Routes>
     </UsuarioLogadoProvider>
     </div>

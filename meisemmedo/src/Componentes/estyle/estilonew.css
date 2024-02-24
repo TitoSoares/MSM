@@ -5,7 +5,11 @@ body{
 
 .DivTela{
     height:100vh;
+    background-image:url("../../../public/TelaFundo2.png");
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 /* Cabecalho */
 /* ==================================== *//* ==================================== *//* ==================================== */
@@ -17,6 +21,7 @@ body{
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .DivCabecalho {
@@ -49,10 +54,11 @@ body{
 
 /* ==================================== *//* ==================================== *//* ==================================== */
 
+
 /* Login */
 /* ==================================== *//* ==================================== *//* ==================================== */
 
-    .telalogin{
+    .Divlogin{
     display: flex;
     flex-direction:row;
     height: 92.50vh;
@@ -157,9 +163,23 @@ body{
         }
     /* ==================================== */
 
+/* ==================================== *//* ==================================== *//* ==================================== */    
+
 
 /* Cadastro */
 /* ==================================== *//* ==================================== *//* ==================================== */
+
+    .DivTelaCadastro{
+        /* background-image:url("../../../public/TelaFundo2.png"); */
+        /* background-image:url("../../../public/TelaFundo1.png"); */
+        /* background-image:url("../../../public/TelaFundo.png"); */
+        /* background-color: #a7adad; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height:100vh
+    }
+
 
     /* LinkCadastro */
     /* ==================================== */
@@ -187,7 +207,7 @@ body{
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
-            width: 300px;
+            width: 320px;
             margin-left: 40%;
         }
 
@@ -235,5 +255,38 @@ body{
             background-color: #2ecc71;
         }
     /* ==================================== */
+
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+
+/* Home */
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    .DivHome{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        height:auto;
+        margin-top:50px;
+       /* border-bottom:1px black solid; */
+       padding-bottom:5px;
+    }
+
+    .TxtHome{
+    margin-right: 500px;
+    font-size: 55px; 
+    /* width: 450px;
+    margin-top: 0px;
+    height: 238px;*/
+    }
+
+    .TxtMEI{
+        /* margin-top: 0px;
+        width:40%;
+        height:auto; */
+        font-size: 20px;
+    }
 
 /* ==================================== *//* ==================================== *//* ==================================== */

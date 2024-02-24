@@ -30,11 +30,11 @@ function LoginN(){
 
             <FuncaoCabecalho/>
 
-            <div className="telalogin">
+            <div className="Divlogin">
                 
                 <div className="DivLeftLogin">
 
-                    <h1 className="TxtMSMLogin">MEI SEM MEDO</h1>
+                    <p className="TxtMSMLogin">MEI SEM MEDO</p>
                     <br/>
                     <h4 className="TxtLeftLogin">Desvende o caminho do empreendedorismo com confiança, sem medos, sem barreiras.</h4>
                     <h4 className="TxtLeftLogin">Transformando sonhos em negócios reais, facilitando sua jornada para o sucesso</h4>

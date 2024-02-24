@@ -16,7 +16,8 @@ function FuncaoCabecalho(){
                     <div className="ItemCabecalho"><a href="#"><Link to="/">Home</Link></a></div>
                     <div className="ItemCabecalho"><a href="#"><Link to="/tutorial">Como criar uma MEI?</Link></a></div>
                     <div className="ItemCabecalho"><a href="#"><Link to="/gov">Funções Gov</Link></a></div>
-                    <div className="ItemCabecalho"><a href="#"><Link to="/gen">Gerenciamento</Link></a></div>
+                    <div className="ItemCabecalho"><a href="#"><Link to="/loginN">LoginN</Link></a></div>
+                    {/* QUANDO ESTIVER LOGADO <div className="ItemCabecalho"><a href="#"><Link to="/gen">Gerenciamento</Link></a></div> */}
                  
                 </div>
 

@@ -7,7 +7,20 @@ export const api = {
         let json = await response.json();
         
         return json;
-    }
+    },
+
+    AdicionarcomArquivo: async (formData: FormData) => {
+        let response = await fetch('google.com',
+        {
+            method: 'POST',
+            body: formData
+        }
+        );
+        let json = await response.json();
+
+        console.log(json);
+        return json;
+    },
 
     // AdicionarUsuario: async (title: string, body: string, userID: number) => {
     //     let response = await fetch('https://jsonplaceholder.typicode.com/posts', 

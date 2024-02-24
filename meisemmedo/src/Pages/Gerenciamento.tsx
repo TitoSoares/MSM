@@ -12,7 +12,7 @@ function Gerenciamento(){
             {( !UsuarioLogadoCtx?.name || !UsuarioLogadoCtx?.name === null) &&
                 <>
                     Você precisa estar logado!
-                    <Link className="Link" to="/login"><div className=""><button className="">LOGIN</button></div></Link>
+                    <Link className="Link" to="/loginNs"><div className=""><button className="">LOGIN</button></div></Link>
                     <div className="escritaMEI">
                     <div className="fundoTexto">
                         <div className="txt1">MEI SEM MEDO</div><br/>
