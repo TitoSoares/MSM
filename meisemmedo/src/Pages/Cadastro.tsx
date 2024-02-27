@@ -38,7 +38,9 @@ function Cadastro(){
         
             <FuncaoCabecalho/>
 
-            <div className="DivLinkCadastro"><Link className="LinkCadastro" to="/login">Já tem seu Login? Entre aqui</Link></div>
+            <div className="DivLinkCadastro">
+                <Link className="LinkCadastro" to="/login">Já tem seu Login? Entre aqui</Link>
+            </div>
 
             <div className="DivCadastro">
 

@@ -8,34 +8,66 @@ function Gerenciamento(){
     const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
 
     return(
-        <div className="planoFundoInfinito">
+        <div className="DivTela">
             {( !UsuarioLogadoCtx?.name || !UsuarioLogadoCtx?.name === null) &&
                 <>
                     Você precisa estar logado!
                     <Link className="Link" to="/login"><div className=""><button className="">LOGIN</button></div></Link>
-                    <div className="escritaMEI">
-                    <div className="fundoTexto">
-                        <div className="txt1">MEI SEM MEDO</div><br/>
-                        <div className="txt2">
-                            Desvende o caminho do empreendedorismo com confiança, sem medos, sem barreiras. <br /> Transformando sonhos em negócios reais, facilitando sua jornada para o sucesso
-                        </div><br />
-                        <div className="txt3"> Seu negócio, nossa missão, sem limites para suas conquistas</div>
-                    </div>
-                    <div className="img"></div>
-                </div>
                 </>
             }
             
             {UsuarioLogadoCtx?.name &&
             <div>
-            <FuncaoCabecalho/>
-            <Link className="Link" to="/historico"><div className="caixaFuncGen">Historico de serviços</div></Link>
-            <Link className="Link" to="/relatorio"><div className="caixaFuncGen">Relatorio Mensal</div></Link>
-            <Link className="Link" to="/entrada_saida"><div className="caixaFuncGen">Entrada/Saida</div></Link>
-            <Link className="Link" to="/agenda"><div className="caixaFuncGen">Agendamento</div></Link>
+                <FuncaoCabecalho/>
+                <div className="DivTela">
+
+                    <div id="sidebar">
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="content">
+                        <h1>Conteúdo Principal</h1>
+                        <p>Este é o conteúdo principal da página com um menu lateral.</p>
+                    </div>
+
+                </div>
+
             </div>
             }
         </div>
     )
 }
+
+{/* <Link className="Link" to="/historico"><div className="caixaFuncGen">Historico de serviços</div></Link>
+<Link className="Link" to="/relatorio"><div className="caixaFuncGen">Relatorio Mensal</div></Link>
+<Link className="Link" to="/entrada_saida"><div className="caixaFuncGen">Entrada/Saida</div></Link>
+<Link className="Link" to="/agenda"><div className="caixaFuncGen">Agendamento</div></Link> */}
+
+
+                    {/* <a className="function1">
+                        <h2 className="h2">Entrada e Saida</h2>
+                        <p className="p1">Descrição da Função 1.</p>
+                    </a>
+
+                    <a className="function1">
+                        <h2 className="h2">Indisponivel</h2>
+                        <p className="p1">A fazer</p>
+                    </a>
+
+                    <a href="#" className="function1">
+                        <h2 className="h2">Indisponivel</h2>
+                        <p className="p1">A fazer</p>
+                    </a>
+
+                    <a className="function1">
+                        <h2 className="h2">Indisponivel</h2>
+                        <p className="p1"> A fazer</p>
+                    </a> */}
+
+
 export default Gerenciamento;

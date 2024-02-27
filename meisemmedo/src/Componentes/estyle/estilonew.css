@@ -201,16 +201,15 @@ body::-webkit-scrollbar-thumb {
         .DivLinkCadastro{
             margin-top: 40px;
             margin-bottom: 5px;
-            margin-right: 15px;
+            margin-left: 44%;
         }
 
         .LinkCadastro{
             text-decoration: none;
             color: #3498db;
-            margin-top: 40px;
         }
         .LinkCadastro:hover {
-        color: #2ecc71;
+            color: #2ecc71;
         }
 
     /* DivCadastro */
@@ -264,6 +263,7 @@ body::-webkit-scrollbar-thumb {
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-left: 30%;
         }
         .ButtonCadastro:hover {
             background-color: #2ecc71;
@@ -415,7 +415,7 @@ body::-webkit-scrollbar-thumb {
         padding: 20px;
     }
 
-    .function {
+    .FuncaoGov {
         display: block;
         background-color: #fff;
         padding: 20px;
@@ -428,7 +428,7 @@ body::-webkit-scrollbar-thumb {
         color: #333; 
         transition: background-color 0.3s; 
     }
-    .function:hover {
+    .FuncaoGov:hover {
         background-color: #f0f0f0; 
     }
 
@@ -485,3 +485,38 @@ body::-webkit-scrollbar-thumb {
     }
 
 /* ==================================== *//* ==================================== *//* ==================================== */
+
+.test {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .function1 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+
+  .function1:hover {
+    background-color: #f0f0f0;
+  }
+
+  .h2{
+    color: #2ecc71;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .p1{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+  }
