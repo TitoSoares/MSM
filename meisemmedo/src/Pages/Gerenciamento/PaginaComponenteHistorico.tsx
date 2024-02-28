@@ -1,6 +1,6 @@
-import FuncaoCabecalho from "../Componentes/Cabecalho"
-import DetalheHistorico from "../Componentes/detalhes/detalheHistorico"
-import CompHistServ from "../ComponentesGerenciamento/CompHistServ"
+import FuncaoCabecalho from "../../Componentes/Cabecalho"
+import DetalheHistorico from "../../Componentes/detalhes/detalheHistorico"
+import CompHistServ from "../../Componentes/ComponentesGerenciamento/CompHistServ"
 
 let lista=[
     {id:"Cliente1",data:"14141", hora:"10/10/2023",atividade:""},

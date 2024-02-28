@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Componentes/estyle/estilo.css"
+import "../../Componentes/estyle/estilo.css"
 
 
 function AgendaServicos(){

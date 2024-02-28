@@ -1,7 +1,7 @@
 
-import FuncaoCabecalho from "../Componentes/Cabecalho"
-import DetalheAgenda from "../Componentes/detalhes/detalheAgenda"
-import CompAgendaServ from "../ComponentesGerenciamento/CompAgendaServ"
+import FuncaoCabecalho from "../../Componentes/Cabecalho"
+import DetalheAgenda from "../../Componentes/detalhes/detalheAgenda"
+import CompAgendaServ from "../../Componentes/ComponentesGerenciamento/CompAgendaServ"
 
 
 let lista=[

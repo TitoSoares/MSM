@@ -1,6 +1,6 @@
 
-import FuncaoCabecalho from "../Componentes/Cabecalho"
-import DetalheRelatorio from "../Componentes/detalhes/detalheRelatorio"
+import FuncaoCabecalho from "../../Componentes/Cabecalho"
+import DetalheRelatorio from "../../Componentes/detalhes/detalheRelatorio"
 
 let lista=[
     {id:"",entrada:'100', saida:'100',liquido:""},

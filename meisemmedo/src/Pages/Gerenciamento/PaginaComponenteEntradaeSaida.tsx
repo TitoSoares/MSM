@@ -1,5 +1,5 @@
-import FuncaoCabecalho from "../Componentes/Cabecalho"
-import CompEntra_Saida from "../ComponentesGerenciamento/CompEntra_Saida"
+import FuncaoCabecalho from "../../Componentes/Cabecalho"
+import CompEntra_Saida from "../../Componentes//ComponentesGerenciamento/CompEntra_Saida"
 
 function EntradaSaida(){
     return(

@@ -4,6 +4,5 @@ export type UsuarioType={
         email:string,
         cpf:string,
         cnpj:string,
-        dataNasc:string,
         senha:string
 }

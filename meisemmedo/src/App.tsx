@@ -7,13 +7,13 @@ import Tutorial from './Pages/Tutorial';
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
 import NotFound from './Pages/NotFound';
-import PaginaComponenteAgenda from './Pages/PaginaComponenteAgenda';
-import PaginaComponenteEntradaeSaida from './Pages/PaginaComponenteEntradaeSaida';
-import PaginaComponenteHistorico from './Pages/PaginaComponenteHistorico';
-import PaginaComponenteRelatorio from './Pages/PaginaComponenteRelatorio';
-import Requisicoes from './Pages/requisicoes';
+import PaginaComponenteAgenda from './Pages/Gerenciamento/PaginaComponenteAgenda';
+import PaginaComponenteEntradaeSaida from './Pages/Gerenciamento/PaginaComponenteEntradaeSaida';
+import PaginaComponenteHistorico from './Pages/Gerenciamento/PaginaComponenteHistorico';
+import PaginaComponenteRelatorio from './Pages/Gerenciamento/PaginaComponenteRelatorio';
+import Requisicoes from './Pages/Aulas/requisicoes';
 import { UsuarioLogadoProvider } from './contexts/contextAuth';
-import ReqPostArquivo from './Pages/reqPostArquivo';
+import ReqPostArquivo from './Pages/Aulas/reqPostArquivo';
 
 
 function App() {

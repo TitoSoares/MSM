@@ -40,6 +40,7 @@ function Login(){
                     <h4 className="TxtLeftLogin">Transformando sonhos em negócios reais, facilitando sua jornada para o sucesso</h4>
                     <br/>
                     <h4 className="TxtLeftLogin">Seu negócio, nossa missão, sem limites para suas conquistas</h4>
+
                     <img src="Imagem_1_log.png" className="ImgLeftLogin"/>
                         
                 </div>

@@ -47,32 +47,32 @@ function Cadastro(){
                 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">Nome:</label>
-                    <input className="InputCadastro" type="text" placeholder="Digite seu nome"/>
+                    <input className="InputCadastro" type="text" placeholder="Digite seu nome" onChange={handleNomeInput}/>
                 </div>
 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">Email:</label>
-                    <input className="InputCadastro" type="email" placeholder="Digite seu email"/>
+                    <input className="InputCadastro" type="email" placeholder="Digite seu email" onChange={handleEmailInput}/>
                 </div>
 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">CPF:</label>
-                    <input className="InputCadastro" type="CPF" placeholder="Digite seu CPF"/>
+                    <input className="InputCadastro" type="CPF" placeholder="Digite seu CPF" onChange={handleCpfInput}/>
                 </div>
 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">CNPJ:</label>
-                    <input className="InputCadastro" type="CPNJ"placeholder="Digite seu CNPJ"/>
+                    <input className="InputCadastro" type="CPNJ"placeholder="Digite seu CNPJ" onChange={handleCnpjInput}/>
                 </div>
 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">Senha:</label>
-                    <input className="InputCadastro" type="Senha" placeholder="Digite sua senha"/>
+                    <input className="InputCadastro" type="Senha" placeholder="Digite sua senha" onChange={handleSenhaInput}/>
                 </div>
 
                 <div className="DivInputCadastro">
                     <label className="LabelCadastro">Repita sua senha:</label>
-                    <input className="InputCadastro" type="SenhaConfirmacao" placeholder="Digite novamente sua senha"/>
+                    <input className="InputCadastro" type="SenhaConfirmacao" placeholder="Digite novamente sua senha" onChange={handleSenhaConfirmacaoInput}/>
                 </div>
         
                 <button className="ButtonCadastro">Cadastrar</button>

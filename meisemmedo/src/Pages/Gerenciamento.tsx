@@ -22,15 +22,16 @@ function Gerenciamento(){
                 <div className="DivTelaGerenciamento">
 
                     <div className="BarraLateral">
+                    <h1 className="BarraLateralTitulo">Menu</h1>
                         <ul className="MenuBarraLateral">
-                            <li className="ItemBarraLateral"><a href="#">Item 1</a></li>
-                            <li className="ItemBarraLateral"><a href="#">Item 2</a></li>
-                            <li className="ItemBarraLateral"><a href="#">Item 3</a></li>
-                            <li className="ItemBarraLateral"><a href="#">Item 4</a></li>
+                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Area de Usuario</a></li>
+                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 2</a></li>
+                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 3</a></li>
+                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 4</a></li>
                         </ul>
                     </div>
 
-                    <div id="content">
+                    <div className="Conteudo">
                         <h1></h1>
                         <p>Este é o conteúdo principal da página com um menu lateral.</p>
                     </div>
