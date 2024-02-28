@@ -9,17 +9,34 @@ import { ApiResponse, ApiTags } from "@nestjs/swagger";
 @Controller('files')
 export class FilesController{
     constructor(private readonly arquivos:FilesArmazenados){}
-    @ApiResponse({status:200, description:"A operação foi um sucesso"})
-    @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
-    @Post()
-    @UseInterceptors(FileInterceptor('arquivo', multerConfig))
-    uploadArquivo(@UploadedFile() file:Express.Multer.File, @Req() req:Request){
-        return this.arquivos.salvarDados(file,req);
-    }
-    @ApiResponse({status:200, description:"A operação foi um sucesso"})
-    @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
-    @Get(':imgpath')
-    retornaArquivo(@Param('imgpath') image, @Res() res){
-        return res.sendFile(image,{root: './upload/files'})
-    }
+
+      // Upload de arquivo
+   // ====================================== //// ====================================== //// ====================================== //
+        // ====Swagger============================ //
+        @ApiResponse({status:200, description:"A operação foi um sucesso"})
+        @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
+        // ====Swagger============================ //
+
+        @Post()
+
+        @UseInterceptors(FileInterceptor('arquivo', multerConfig))
+
+        uploadArquivo(@UploadedFile() file:Express.Multer.File, @Req() 
+        req:Request){return this.arquivos.salvarDados(file,req);}
+   // ====================================== //// ====================================== //// ====================================== //
+
+   
+      // GET caminho da imagem
+   // ====================================== //// ====================================== //// ====================================== //
+        // ====Swagger============================ //
+        @ApiResponse({status:200, description:"A operação foi um sucesso"})
+        @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
+        // ====Swagger============================ //
+
+        @Get(':imgpath')
+
+        retornaArquivo(@Param('imgpath') image, @Res() res)
+        {return res.sendFile(image,{root: './files'})}
+        
+   // ====================================== //// ====================================== //// ====================================== //
 }

@@ -17,21 +17,21 @@ function Gerenciamento(){
             }
             
             {UsuarioLogadoCtx?.name &&
-            <div>
+            <div className="DivTela">
                 <FuncaoCabecalho/>
-                <div className="DivTela">
+                <div className="DivTelaGerenciamento">
 
-                    <div id="sidebar">
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                            <li><a href="#">Item 4</a></li>
+                    <div className="BarraLateral">
+                        <ul className="MenuBarraLateral">
+                            <li className="ItemBarraLateral"><a href="#">Item 1</a></li>
+                            <li className="ItemBarraLateral"><a href="#">Item 2</a></li>
+                            <li className="ItemBarraLateral"><a href="#">Item 3</a></li>
+                            <li className="ItemBarraLateral"><a href="#">Item 4</a></li>
                         </ul>
                     </div>
 
                     <div id="content">
-                        <h1>Conteúdo Principal</h1>
+                        <h1></h1>
                         <p>Este é o conteúdo principal da página com um menu lateral.</p>
                     </div>
 

@@ -1,3 +1,4 @@
+
 export class ListaEntrada_Saida{
     constructor(
         readonly id:string,
