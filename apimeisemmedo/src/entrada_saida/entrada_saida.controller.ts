@@ -26,7 +26,7 @@ export class Entrada_saidaController{
 
         async criaEntrada_Saida(@Body() dadosEntrada_Saida:CriaEntrada_SaidaDTO){
 
-            var entrada_saida=new Entrada_SaidaEntity(uuid(),dadosEntrada_Saida.tipo,dadosEntrada_Saida.valor,dadosEntrada_Saida.foto)
+            var entrada_saida=new Entrada_SaidaEntity(uuid(),dadosEntrada_Saida.tipo,dadosEntrada_Saida.valor,dadosEntrada_Saida.foto,dadosEntrada_Saida.idusuario)
 
             this.claEntrada_SaidaArmazenados.AdicionarEntrada_Saida(entrada_saida)
 
