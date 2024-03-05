@@ -1,36 +1,28 @@
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 import "../Componentes/estyle/estilo.css"
-import { Link, useNavigate } from "react-router-dom";
+import "../Componentes/estyle/estilonew.css"
 import { useContext } from "react";
 import { UsuarioLogadoContext } from "../contexts/contextAuth";
+import BarraLateral from "../Componentes/BarraLateral";
 
 function Gerenciamento(){
     const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
 
     return(
         <div className="DivTela">
-            {( !UsuarioLogadoCtx?.name || !UsuarioLogadoCtx?.name === null) &&
+            {/* {( !UsuarioLogadoCtx?.name || !UsuarioLogadoCtx?.name === null) &&
                 <>
                     Você precisa estar logado!
                     <Link className="Link" to="/login"><div className=""><button className="">LOGIN</button></div></Link>
                 </>
             }
             
-            {UsuarioLogadoCtx?.name &&
+            {UsuarioLogadoCtx?.name && */}
             <div className="DivTela">
                 <FuncaoCabecalho/>
                 <div className="DivTelaGerenciamento">
 
-                    <div className="BarraLateral">
-                    <h1 className="BarraLateralTitulo">Menu</h1>
-                        <ul className="MenuBarraLateral">
-                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Area de Usuario</a></li>
-                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 2</a></li>
-                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 3</a></li>
-                            <li className="ItemBarraLateral"><a className="linkGen" href="#">Item 4</a></li>
-                        </ul>
-                    </div>
-
+                    <BarraLateral/>
                     <div className="Conteudo">
                         <h1></h1>
                         <p>Este é o conteúdo principal da página com um menu lateral.</p>
@@ -39,36 +31,9 @@ function Gerenciamento(){
                 </div>
 
             </div>
-            }
+            {/* } */}
         </div>
     )
 }
-
-{/* <Link className="Link" to="/historico"><div className="caixaFuncGen">Historico de serviços</div></Link>
-<Link className="Link" to="/relatorio"><div className="caixaFuncGen">Relatorio Mensal</div></Link>
-<Link className="Link" to="/entrada_saida"><div className="caixaFuncGen">Entrada/Saida</div></Link>
-<Link className="Link" to="/agenda"><div className="caixaFuncGen">Agendamento</div></Link> */}
-
-
-                    {/* <a className="function1">
-                        <h2 className="h2">Entrada e Saida</h2>
-                        <p className="p1">Descrição da Função 1.</p>
-                    </a>
-
-                    <a className="function1">
-                        <h2 className="h2">Indisponivel</h2>
-                        <p className="p1">A fazer</p>
-                    </a>
-
-                    <a href="#" className="function1">
-                        <h2 className="h2">Indisponivel</h2>
-                        <p className="p1">A fazer</p>
-                    </a>
-
-                    <a className="function1">
-                        <h2 className="h2">Indisponivel</h2>
-                        <p className="p1"> A fazer</p>
-                    </a> */}
-
 
 export default Gerenciamento;

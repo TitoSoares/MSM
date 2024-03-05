@@ -473,7 +473,7 @@ body::-webkit-scrollbar-thumb {
         background-color: #3498db;
         color: #fff;
         border: none;
-  
+        margin-left: 46%;
         width: 125px;
         border-radius: 5px;
         cursor: pointer;
@@ -486,54 +486,64 @@ body::-webkit-scrollbar-thumb {
     }
 
 /* ==================================== *//* ==================================== *//* ==================================== */
-.DivTelaGerenciamento {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 92vh;
-  }
 
-  .BarraLateral {
-    width: 80px;
-    background-color: #2ecc71;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
+    .BarraLateral {
+        width: 60px;
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-  .BarraLateralTitulo{
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
+    .BarraLateralTitulo{
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
 
-  .conteudo {
-    flex: 1;
-    padding: 20px;
-  }
+    .MenuBarraLateral {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-  .MenuBarraLateral {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .ItemBarraLateral {
+        margin-bottom: 10px;
+    }
 
-  .ItemBarraLateral {
-    margin-bottom: 10px;
-  }
+    .linkGen{
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+        transition: color 0.3s;
+    }
 
-  .linkGen{
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    transition: color 0.3s;
-  }
+    .linkGen:hover {
+        color: #3498db;
+    }
 
-  .linkGen:hover {
-    color: #3498db;
-  }
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    .DivTelaGerenciamento {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 92vh;
+        background-image:url("../../../public/TelaFundo2.png");
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .conteudo {
+        flex: 1;
+        padding: 20px;
+    }
+
+/* ==================================== *//* ==================================== *//* ==================================== */

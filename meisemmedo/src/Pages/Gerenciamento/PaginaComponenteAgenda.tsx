@@ -2,6 +2,8 @@
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import DetalheAgenda from "../../Componentes/detalhes/detalheAgenda"
 import CompAgendaServ from "../../Componentes/ComponentesGerenciamento/CompAgendaServ"
+import BarraLateral from "../../Componentes/BarraLateral"
+import "../Componentes/estyle/estilonew.css"
 
 
 let lista=[
@@ -17,8 +19,9 @@ let lista=[
 
 function Agenda(){
     return(
-        <div className="planoFundo">
+        <div className="DivTelaGerenciamento">
             <FuncaoCabecalho/>
+            <BarraLateral/>
             <div className="Controle">
                 <CompAgendaServ/><br />
                 <div className="botaoRespostas">

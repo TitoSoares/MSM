@@ -1,6 +1,8 @@
-
+import BarraLateral from "../../Componentes/BarraLateral"
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import DetalheRelatorio from "../../Componentes/detalhes/detalheRelatorio"
+import "../Componentes/estyle/estilonew.css"    
+
 
 let lista=[
     {id:"",entrada:'100', saida:'100',liquido:""},
@@ -13,8 +15,9 @@ let lista=[
 ]
 function Relatorio(){
     return(
-        <div className="planoFundo">
+        <div className="DivTelaGerenciamento">
             <FuncaoCabecalho/>
+            <BarraLateral/>
             <div className="Controle">
                 <div className="listagemEspesifica">
                     {lista.map((item, index)=>(

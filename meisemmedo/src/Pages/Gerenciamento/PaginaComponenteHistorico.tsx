@@ -1,6 +1,9 @@
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import DetalheHistorico from "../../Componentes/detalhes/detalheHistorico"
+import BarraLateral from "../../Componentes/BarraLateral"
 import CompHistServ from "../../Componentes/ComponentesGerenciamento/CompHistServ"
+import "../Componentes/estyle/estilonew.css"
+
 
 let lista=[
     {id:"Cliente1",data:"14141", hora:"10/10/2023",atividade:""},
@@ -13,8 +16,9 @@ let lista=[
 ]
 function Historico(){
     return(
-        <div className="planoFundo">
+        <div className="DivTelaGerenciamento">
             <FuncaoCabecalho/>
+            <BarraLateral/>
             <div className="Controle">
                 <CompHistServ/><br />
                 <div className="botaoRespostas">
