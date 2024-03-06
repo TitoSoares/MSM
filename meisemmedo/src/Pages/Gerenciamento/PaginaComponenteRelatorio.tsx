@@ -1,7 +1,7 @@
 import BarraLateral from "../../Componentes/BarraLateral"
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import DetalheRelatorio from "../../Componentes/detalhes/detalheRelatorio"
-import "../Componentes/estyle/estilonew.css"    
+import "../../Componentes/estyle/estilonew.css" 
 
 
 let lista=[

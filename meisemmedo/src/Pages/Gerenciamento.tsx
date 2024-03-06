@@ -24,8 +24,12 @@ function Gerenciamento(){
 
                     <BarraLateral/>
                     <div className="Conteudo">
-                        <h1></h1>
-                        <p>Este é o conteúdo principal da página com um menu lateral.</p>
+                        <a className="rectangle">1</a>
+                        <a className="rectangle">2</a>
+                        <a className="rectangle">3</a>
+                        <a className="rectangle">4</a>
+                        <a className="rectangle">5</a>
+                        <a className="rectangle">6</a>
                     </div>
 
                 </div>

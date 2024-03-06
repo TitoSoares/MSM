@@ -2,7 +2,7 @@ import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import DetalheHistorico from "../../Componentes/detalhes/detalheHistorico"
 import BarraLateral from "../../Componentes/BarraLateral"
 import CompHistServ from "../../Componentes/ComponentesGerenciamento/CompHistServ"
-import "../Componentes/estyle/estilonew.css"
+import "../../Componentes/estyle/estilonew.css"
 
 
 let lista=[

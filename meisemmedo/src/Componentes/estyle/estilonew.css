@@ -541,9 +541,30 @@ body::-webkit-scrollbar-thumb {
         background-size: cover;
     }
 
-    .conteudo {
+    .Conteudo {
         flex: 1;
         padding: 20px;
-    }
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      
+
+      .rectangle {
+        width: 200px;
+        height: 120px;
+        background-color: #3498db;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+      }
+  
+      .rectangle:hover {
+        background-color: #2980b9;
+      }
 
 /* ==================================== *//* ==================================== *//* ==================================== */

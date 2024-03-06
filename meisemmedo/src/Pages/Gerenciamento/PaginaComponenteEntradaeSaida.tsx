@@ -1,7 +1,7 @@
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import CompEntra_Saida from "../../Componentes//ComponentesGerenciamento/CompEntra_Saida"
 import BarraLateral from "../../Componentes/BarraLateral"
-import "../Componentes/estyle/estilonew.css"
+import "../../Componentes/estyle/estilonew.css"
 
 function EntradaSaida(){
     return(
