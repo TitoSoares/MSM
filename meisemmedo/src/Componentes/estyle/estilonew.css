@@ -544,15 +544,15 @@ body::-webkit-scrollbar-thumb {
     .Conteudo {
         flex: 1;
         padding: 20px;
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
-        gap: 20px;
+        gap: 20px; */
       }
       
 
       .rectangle {
-        width: 200px;
-        height: 120px;
+        width: 90%;
+        height: 300px;
         background-color: #3498db;
         color: #fff;
         display: flex;
@@ -568,3 +568,27 @@ body::-webkit-scrollbar-thumb {
       }
 
 /* ==================================== *//* ==================================== *//* ==================================== */
+
+.expansivel {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .expandido {
+    width: 200px;
+  }
+  
+  .conteudo {
+    padding: 10px;
+  }
+  
+  .botao-expansao {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+  }

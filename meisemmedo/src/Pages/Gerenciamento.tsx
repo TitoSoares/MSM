@@ -1,12 +1,19 @@
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 import "../Componentes/estyle/estilo.css"
 import "../Componentes/estyle/estilonew.css"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { UsuarioLogadoContext } from "../contexts/contextAuth";
 import BarraLateral from "../Componentes/BarraLateral";
 
+
 function Gerenciamento(){
     const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
+
+    const [expandido, setExpandido] = useState(false);
+      
+    function expandirContrair () {
+          setExpandido(!expandido);
+        };
 
     return(
         <div className="DivTela">
@@ -24,12 +31,25 @@ function Gerenciamento(){
 
                     <BarraLateral/>
                     <div className="Conteudo">
-                        <a className="rectangle">1</a>
-                        <a className="rectangle">2</a>
-                        <a className="rectangle">3</a>
-                        <a className="rectangle">4</a>
-                        <a className="rectangle">5</a>
-                        <a className="rectangle">6</a>
+
+                        <div className={`expansivel ${expandido ? 'expandido' : ''}`} id="minhaDiv">
+                            <div className="conteudo">
+                            <p>Conteúdo da div expansível.</p>
+                            <p>Outras informações podem estar aqui.</p>
+                            </div>
+                        </div>
+
+                        <div className="botao-expansao" onClick={expandirContrair}>
+                            {expandido ? 'Contrair' : 'Expandir'}
+                        </div>
+                        
+                        {/* <a className="rectangle">Usuario</a>
+                        <a className="rectangle" href="entrada_saida">Gerenciamento</a>
+                        <a className="rectangle" href="Historico">Historico</a>
+                        <a className="rectangle" href="Agenda">Agenda</a>
+                        <a className="rectangle" href="Relatorio">Relatorio</a>
+                        <a className="rectangle">🛑Em Reforma🛑</a> */}
+                        
                     </div>
 
                 </div>
