@@ -529,66 +529,13 @@ body::-webkit-scrollbar-thumb {
 
 /* ==================================== *//* ==================================== *//* ==================================== */
 
-    .DivTelaGerenciamento {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        min-height: 92vh;
-        background-image:url("../../../public/TelaFundo2.png");
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+ .aaaal{
+    border: 1px solid #ccc; 
+    margin: 20px;
+ }
 
-    .Conteudo {
-        flex: 1;
-        padding: 20px;
-        /* display: grid;
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
-        gap: 20px; */
-      }
-      
-
-      .rectangle {
-        width: 90%;
-        height: 300px;
-        background-color: #3498db;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s;
-      }
-  
-      .rectangle:hover {
-        background-color: #2980b9;
-      }
-
-/* ==================================== *//* ==================================== *//* ==================================== */
-
-.expansivel {
-    width: 0;
-    overflow: hidden;
-    transition: width 0.3s ease;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-  }
-  
-  .expandido {
-    width: 200px;
-  }
-  
-  .conteudo {
+ .testaa{
+    background-color: #fff;
     padding: 10px;
-  }
-  
-  .botao-expansao {
     cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-  }
+ }

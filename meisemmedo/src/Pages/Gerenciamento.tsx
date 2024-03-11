@@ -4,16 +4,18 @@ import "../Componentes/estyle/estilonew.css"
 import { useContext, useState } from "react";
 import { UsuarioLogadoContext } from "../contexts/contextAuth";
 import BarraLateral from "../Componentes/BarraLateral";
+import Historico from "./Gerenciamento/PaginaComponenteHistorico";
 
 
 function Gerenciamento(){
+    
     const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
 
-    const [expandido, setExpandido] = useState(false);
+    const [conteudoVisivel, setConteudoVisivel] = useState(false);
       
-    function expandirContrair () {
-          setExpandido(!expandido);
-        };
+    function toggleDiv (){
+      setConteudoVisivel(!conteudoVisivel);
+    };
 
     return(
         <div className="DivTela">
@@ -27,32 +29,18 @@ function Gerenciamento(){
             {UsuarioLogadoCtx?.name && */}
             <div className="DivTela">
                 <FuncaoCabecalho/>
-                <div className="DivTelaGerenciamento">
+  
+                <div className="aaaal">
+                    <div className="testaa" onClick={toggleDiv}> Cabeçalho da Div</div>
 
-                    <BarraLateral/>
-                    <div className="Conteudo">
-
-                        <div className={`expansivel ${expandido ? 'expandido' : ''}`} id="minhaDiv">
-                            <div className="conteudo">
-                            <p>Conteúdo da div expansível.</p>
-                            <p>Outras informações podem estar aqui.</p>
-                            </div>
+                    {conteudoVisivel && (
+                        <div style={{ padding: '10px' }}>
+                            <Historico/>
                         </div>
-
-                        <div className="botao-expansao" onClick={expandirContrair}>
-                            {expandido ? 'Contrair' : 'Expandir'}
-                        </div>
-                        
-                        {/* <a className="rectangle">Usuario</a>
-                        <a className="rectangle" href="entrada_saida">Gerenciamento</a>
-                        <a className="rectangle" href="Historico">Historico</a>
-                        <a className="rectangle" href="Agenda">Agenda</a>
-                        <a className="rectangle" href="Relatorio">Relatorio</a>
-                        <a className="rectangle">🛑Em Reforma🛑</a> */}
-                        
-                    </div>
-
+                    )}
                 </div>
+
+                
 
             </div>
             {/* } */}

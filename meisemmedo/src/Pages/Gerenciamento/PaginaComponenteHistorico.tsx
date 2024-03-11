@@ -17,8 +17,6 @@ let lista=[
 function Historico(){
     return(
         <div className="DivTelaGerenciamento">
-            <FuncaoCabecalho/>
-            <BarraLateral/>
             <div className="Controle">
                 <CompHistServ/><br />
                 <div className="botaoRespostas">
