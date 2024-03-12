@@ -1,49 +1,33 @@
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 import "../Componentes/estyle/estilo.css"
 import "../Componentes/estyle/estilonew.css"
-import { useContext, useState } from "react";
-import { UsuarioLogadoContext } from "../contexts/contextAuth";
-import BarraLateral from "../Componentes/BarraLateral";
-import Historico from "./Gerenciamento/PaginaComponenteHistorico";
+
 
 
 function Gerenciamento(){
     
-    const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
-
-    const [conteudoVisivel, setConteudoVisivel] = useState(false);
-      
-    function toggleDiv (){
-      setConteudoVisivel(!conteudoVisivel);
-    };
-
     return(
         <div className="DivTela">
-            {/* {( !UsuarioLogadoCtx?.name || !UsuarioLogadoCtx?.name === null) &&
-                <>
-                    Você precisa estar logado!
-                    <Link className="Link" to="/login"><div className=""><button className="">LOGIN</button></div></Link>
-                </>
-            }
-            
-            {UsuarioLogadoCtx?.name && */}
-            <div className="DivTela">
-                <FuncaoCabecalho/>
-  
-                <div className="aaaal">
-                    <div className="testaa" onClick={toggleDiv}> Cabeçalho da Div</div>
-
-                    {conteudoVisivel && (
-                        <div style={{ padding: '10px' }}>
-                            <Historico/>
-                        </div>
-                    )}
-                </div>
-
+            <FuncaoCabecalho/>
                 
+            <div className="DivGerenciamento">
+                <a className="DivGen1" href="entrada_saida">
+                    <h1>Entradas e Saidas</h1>
+                    <img className="imgGen" src="EntradaSaida_Gerenciamento.png"/>
+                </a>
 
+                <a className="DivGen1" href="Agenda">
+                    <h1>Agenda</h1>
+                    <img className="imgGen" src="Agenda_Gerenciamento.png"/>
+                </a>
             </div>
-            {/* } */}
+
+            <div className="DivGerenciamento">
+                <a className="DivGen2" href="AreaDeUsuario">
+                    <h1>Area de Usuario</h1>
+                    <img className="imgGen" src="User_Gerenciamento.png"/>
+                </a>
+            </div>
         </div>
     )
 }

@@ -41,14 +41,14 @@ function Login(){
                     <br/>
                     <h4 className="TxtLeftLogin">Seu negócio, nossa missão, sem limites para suas conquistas</h4>
 
-                    <img src="Imagem_1_log.png" className="ImgLeftLogin"/>
+                    <img src="Login1.png" className="ImgLeftLogin"/>
                         
                 </div>
 
                 
                 <div className="DivRightLogin">
 
-                    <img src="Imagem_2_log.png" className="ImgRightLogin"/>
+                    <img src="Login2.png" className="ImgRightLogin"/>
 
                     
                     <input placeholder="Insira seu login" type="text"  value={login} onChange={handleLoginInput} className="InputLogin"></input>

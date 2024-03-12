@@ -7,7 +7,7 @@ function FuncaoCabecalho(){
         <div>
             <header className="HeadCabecalho">
             
-                <div><img className="ImgCabecalho" src="MSM_logo1.png"/></div>
+                <div><img className="ImgCabecalho" src="MSM_logo.png"/></div>
 
                 <div className="DivCabecalho">
               

@@ -8,11 +8,10 @@ function BarraLateral(){
             <div className="BarraLateral">
                 <h1 className="BarraLateralTitulo">Menu</h1>
                 <ul className="MenuBarraLateral">
-                    <li className="ItemBarraLateral"><a className="linkGen" href="#">Usuario</a></li>
-                    <li className="ItemBarraLateral"><a className="linkGen" href="entrada_saida">Gerenc</a></li>
-                    <li className="ItemBarraLateral"><a className="linkGen" href="Historico">Hist</a></li>
-                    <li className="ItemBarraLateral"><a className="linkGen" href="Agenda">Agenda</a></li>
-                    <li className="ItemBarraLateral"><a className="linkGen" href="Relatorio">Relatorio</a></li>
+                    <li className="ItemBarraLateral"><a className="LinkLateral" href="gen">Home</a></li>
+                    <li className="ItemBarraLateral"><a className="LinkLateral" href="entrada_saida">Gerenciamento</a></li>
+                    <li className="ItemBarraLateral"><a className="LinkLateral" href="AreaDeUsuario">Area de Usuario</a></li>
+                    <li className="ItemBarraLateral"><a className="LinkLateral" href="Agenda">Agenda</a></li>
                 </ul>
             </div>
         </div>

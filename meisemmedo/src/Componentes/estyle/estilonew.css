@@ -6,7 +6,7 @@ body{
 
 .DivTela{
     height:100vh;
-    background-image:url("../../../public/TelaFundo2.png");
+    background-image:url("../../../public/TelaFundo.png");
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +15,7 @@ body{
 
 .DivTelona{
     height:auto;
-    background-image:url("../../../public/TelaFundo2.png");
+    background-image:url("../../../public/TelaFundo.png");
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
@@ -482,9 +482,12 @@ body::-webkit-scrollbar-thumb {
     }
     .ButtonNotFound:hover {
         background-color: #2ecc71;
-        
     }
 
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+
+/* Barra Lateral */ 
 /* ==================================== *//* ==================================== *//* ==================================== */
 
     .BarraLateral {
@@ -516,26 +519,62 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 10px;
     }
 
-    .linkGen{
+    .LinkLateral{
         text-decoration: none;
         color: #fff;
         font-size: 10px;
         transition: color 0.3s;
     }
 
-    .linkGen:hover {
+    .LinkLateral:hover {
         color: #3498db;
     }
 
 /* ==================================== *//* ==================================== *//* ==================================== */
 
- .aaaal{
-    border: 1px solid #ccc; 
-    margin: 20px;
- }
 
- .testaa{
-    background-color: #fff;
-    padding: 10px;
-    cursor: pointer;
- }
+/* Gerenciamento */ 
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+    .DivGerenciamento{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DivGen1{
+        background-color: #2ecc71;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        width: 40%;
+        height: 300px;
+        margin: 10px;
+        margin-top: 45px;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .DivGen2{
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        width: 81.3%;
+        height: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .imgGen{
+        width: 275px;
+        height: 205px;
+    }
+
+    .TxtGen{
+        color: #3498db;
+    }

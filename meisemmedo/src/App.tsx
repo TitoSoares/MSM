@@ -14,6 +14,7 @@ import PaginaComponenteRelatorio from './Pages/Gerenciamento/PaginaComponenteRel
 import Requisicoes from './Pages/Aulas/requisicoes';
 import { UsuarioLogadoProvider } from './contexts/contextAuth';
 import ReqPostArquivo from './Pages/Aulas/reqPostArquivo';
+import AreaDeUsuario from './Pages/Gerenciamento/AreaDeUsuario';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path='/relatorio' element={<PaginaComponenteRelatorio/>}></Route>
         <Route path='/requisicoes' element={<Requisicoes/>}></Route>
         <Route path='/req' element={<ReqPostArquivo/>}></Route>
+        <Route path='/AreaDeUsuario' element={<AreaDeUsuario/>}></Route>
       </Routes>
     </UsuarioLogadoProvider>
     </div>
