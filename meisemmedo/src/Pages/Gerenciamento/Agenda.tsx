@@ -2,7 +2,7 @@ import BarraLateral from "../../Componentes/BarraLateral"
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import "../../Componentes/estyle/estilonew.css" 
 
-function AreaDeUsuario(){
+function Agenda(){
     return(
         <div className="DivTela">
             <FuncaoCabecalho/>
@@ -12,4 +12,4 @@ function AreaDeUsuario(){
         </div>
     )
 }
-export default AreaDeUsuario
+export default Agenda

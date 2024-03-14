@@ -11,7 +11,7 @@ function Gerenciamento(){
             <FuncaoCabecalho/>
                 
             <div className="DivGerenciamento">
-                <a className="DivGen1" href="entrada_saida">
+                <a className="DivGen1" href="EntradaSaida">
                     <h1>Entradas e Saidas</h1>
                     <img className="imgGen" src="EntradaSaida_Gerenciamento.png"/>
                 </a>

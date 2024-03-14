@@ -487,52 +487,6 @@ body::-webkit-scrollbar-thumb {
 /* ==================================== *//* ==================================== *//* ==================================== */
 
 
-/* Barra Lateral */ 
-/* ==================================== *//* ==================================== *//* ==================================== */
-
-    .BarraLateral {
-        width: 60px;
-        background-color: #2ecc71;
-        color: #fff;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .BarraLateralTitulo{
-        font-size: 18px;
-        margin-bottom: 20px;
-        color: #fff;
-    }
-
-    .MenuBarraLateral {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .ItemBarraLateral {
-        margin-bottom: 10px;
-    }
-
-    .LinkLateral{
-        text-decoration: none;
-        color: #fff;
-        font-size: 10px;
-        transition: color 0.3s;
-    }
-
-    .LinkLateral:hover {
-        color: #3498db;
-    }
-
-/* ==================================== *//* ==================================== *//* ==================================== */
-
-
 /* Gerenciamento */ 
 /* ==================================== *//* ==================================== *//* ==================================== */
 
@@ -578,3 +532,110 @@ body::-webkit-scrollbar-thumb {
     .TxtGen{
         color: #3498db;
     }
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+
+    /* Barra Lateral */ 
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+.BarraLateral {
+    width: 60px;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 92vh;
+}
+
+.BarraLateralTitulo{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.MenuBarraLateral {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ItemBarraLateral {
+    margin-bottom: 10px;
+}
+
+.LinkLateral{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    transition: color 0.3s;
+}
+
+.LinkLateral:hover {
+    color: #3498db;
+}
+
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+
+
+/* ==================================== *//* ==================================== *//* ==================================== */
+
+.DivFuncoes{
+    display: flex;
+    height: 84vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    height: 92vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }

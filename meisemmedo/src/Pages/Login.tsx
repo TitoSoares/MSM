@@ -22,7 +22,7 @@ function Login(){
 
     const AcessoDireto = () => {
     UsuarioLogadoCtx?.setName(login);
-       navigate('/gen');
+       navigate('/Gerenciamento');
      }
 
     return(

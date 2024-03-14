@@ -7,14 +7,10 @@ import Tutorial from './Pages/Tutorial';
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
 import NotFound from './Pages/NotFound';
-import PaginaComponenteAgenda from './Pages/Gerenciamento/PaginaComponenteAgenda';
-import PaginaComponenteEntradaeSaida from './Pages/Gerenciamento/PaginaComponenteEntradaeSaida';
-import PaginaComponenteHistorico from './Pages/Gerenciamento/PaginaComponenteHistorico';
-import PaginaComponenteRelatorio from './Pages/Gerenciamento/PaginaComponenteRelatorio';
-import Requisicoes from './Pages/Aulas/requisicoes';
 import { UsuarioLogadoProvider } from './contexts/contextAuth';
-import ReqPostArquivo from './Pages/Aulas/reqPostArquivo';
 import AreaDeUsuario from './Pages/Gerenciamento/AreaDeUsuario';
+import EntradaSaida from './Pages/Gerenciamento/EntradaSaida';
+import Agenda from './Pages/Gerenciamento/Agenda';
 
 
 function App() {
@@ -29,14 +25,10 @@ function App() {
         <Route path='/tutorial' element={<Tutorial/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/cadastro' element={<Cadastro/>}></Route>
-        <Route path='/gen' element={<Gerenciamento/>}></Route>
-        <Route path='/agenda' element={<PaginaComponenteAgenda/>}></Route>
-        <Route path='/entrada_saida' element={<PaginaComponenteEntradaeSaida/>}></Route>
-        <Route path='/historico' element={<PaginaComponenteHistorico/>}></Route>
-        <Route path='/relatorio' element={<PaginaComponenteRelatorio/>}></Route>
-        <Route path='/requisicoes' element={<Requisicoes/>}></Route>
-        <Route path='/req' element={<ReqPostArquivo/>}></Route>
+        <Route path='/Gerenciamento' element={<Gerenciamento/>}></Route>
+        <Route path='/Agenda' element={<Agenda/>}></Route>
         <Route path='/AreaDeUsuario' element={<AreaDeUsuario/>}></Route>
+        <Route path='/EntradaSaida' element={<EntradaSaida/>}></Route>
       </Routes>
     </UsuarioLogadoProvider>
     </div>
