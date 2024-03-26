@@ -1,5 +1,4 @@
 import FuncaoCabecalho from "../Componentes/Cabecalho";
-import "../Componentes/estyle/estilo.css"
 import "../Componentes/estyle/estilonew.css"
 
 

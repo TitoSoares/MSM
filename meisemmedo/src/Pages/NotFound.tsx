@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../Componentes/estyle/estilo.css"
+import "../Componentes/estyle/estilonew.css"
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 
 function NotFound(){

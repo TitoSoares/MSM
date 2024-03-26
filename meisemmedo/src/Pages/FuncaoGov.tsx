@@ -47,8 +47,11 @@ function FuncaoGov(){
                     <h2 className="TxtTitulo">Baixa da Empresa</h2>
                     <p className="TxtDescricao">A baixa da empresa MEI é feita, preenchendo formulários e emitindo o DAS para pagamento. Após processamento, obtém-se o Certificado de Baixa, confirmando o encerramento das atividades. A função é encerrar formalmente as atividades do MEI, assegurando conformidade legal. Recomenda-se a orientação de um contador para procedimentos corretos.</p>
                 </a>
-
+                
             </div>
+
+            <label className="TxtPasso">Login</label>
+                <br /><a href="/Login" className="ButtonTutorial">Login</a>
 
         </div>
     )
