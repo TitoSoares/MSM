@@ -26,4 +26,13 @@ export class CriaAgendaDTO{
         description:"A atividade é usada para organizar as atividades que serão realizadas"
     })
     atividade:string
+
+    @IsString()
+    @IsNotEmpty({message:"A hora não pode ser vazia"})
+    @ApiProperty({
+        example:" '19:00' ou '10:00' ",
+        description:"A hora é usada para salvar as horas e os minutos que deseja marcar um agendamento"
+    })
+    idusuario:string
+
 }

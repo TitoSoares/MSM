@@ -1,59 +1,59 @@
-import { ChangeEvent, useRef, useState } from "react";
-import { api } from "../../api";
+// import { ChangeEvent, useRef, useState } from "react";
+// import { api } from "../../api";
 
 
 
-function ReqPostArquivo(){
+// function ReqPostArquivo(){
 
-    const handleAddPost = async () => {
+//     const handleAddPost = async () => {
         
-        if(fileInput.current?.files && fileInput.current.files?.length > 0){
+//         if(fileInput.current?.files && fileInput.current.files?.length > 0){
 
-        const fileItem = fileInput.current.files[0];
-        console.log(fileItem);
+//         const fileItem = fileInput.current.files[0];
+//         console.log(fileItem);
 
-            const tiposPermitidos = ['image/png', 'image/jpg', 'image/gif', 'image/jpeg']
+//             const tiposPermitidos = ['image/png', 'image/jpg', 'image/gif', 'image/jpeg']
 
-            if(tiposPermitidos.includes(fileItem.type)){
+//             if(tiposPermitidos.includes(fileItem.type)){
 
-            const data = new FormData();
-            data.append('image', fileItem);
-            data.append('nome_cliente', legenda);
+//             const data = new FormData();
+//             data.append('image', fileItem);
+//             data.append('nome_cliente', legenda);
 
-            let json = await api.AdicionarcomArquivo(data);
-            if (json.id) {
-            alert('Post Adcionado com sucesso!')
-            // setUsuarios((usuarios) => [...usuarios, json] );
-            } else {
-                alert('falha ao adicionar usuario')
-            }
-            } else {
-                alert ('Tipo do arquivo invalido')
-            }
-        } else {
-            alert('ARQUIVO INEXISTENTE')
-        }
-    }
+//             let json = await api.AdicionarcomArquivo(data);
+//             if (json.id) {
+//             alert('Post Adcionado com sucesso!')
+//             // setUsuarios((usuarios) => [...usuarios, json] );
+//             } else {
+//                 alert('falha ao adicionar usuario')
+//             }
+//             } else {
+//                 alert ('Tipo do arquivo invalido')
+//             }
+//         } else {
+//             alert('ARQUIVO INEXISTENTE')
+//         }
+//     }
 
-    const fileInput = useRef<HTMLInputElement>(null)
-    const [legenda, setlegenda] = useState('')
+//     const fileInput = useRef<HTMLInputElement>(null)
+//     const [legenda, setlegenda] = useState('')
 
-    const handleLegendaChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setlegenda(e.target.value)
-    }
+//     const handleLegendaChange = (e: ChangeEvent<HTMLInputElement>) => {
+//         setlegenda(e.target.value)
+//     }
 
-    return(
-        <div >
+//     return(
+//         <div >
 
-          <input type="file" placeholder="Imagem" ref={fileInput}/>
-          <br />
-          <input type="text" placeholder="Descrição Imagem" value={legenda} onChange={handleLegendaChange} />
-          <br />
-          <button onClick={handleAddPost}> Adicionar </button>
+//           <input type="file" placeholder="Imagem" ref={fileInput}/>
+//           <br />
+//           <input type="text" placeholder="Descrição Imagem" value={legenda} onChange={handleLegendaChange} />
+//           <br />
+//           <button onClick={handleAddPost}> Adicionar </button>
         
-        </div>
-    )
-}
-export default ReqPostArquivo;
+//         </div>
+//     )
+// }
+// export default ReqPostArquivo;
 
 

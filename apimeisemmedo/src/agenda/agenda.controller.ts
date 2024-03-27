@@ -14,11 +14,14 @@ import { ListaAgendaDTO } from "./dto/listaAgenda.dto";
 export class AgendaController{
     constructor(private claAgendaArmazenados:AgendaArmazenados){
     }
+
+ // ====================================== //// ====================================== //// ====================================== //
+
     @ApiResponse({status:200, description:"A operação foi um sucesso"})
     @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
     @Post()
     async criaAgenda(@Body() dadosAgenda:CriaAgendaDTO){
-        var agenda=new AgendaEntity(uuid(),dadosAgenda.data,dadosAgenda.hora,dadosAgenda.atividade)
+        var agenda=new AgendaEntity(uuid(),dadosAgenda.data,dadosAgenda.hora,dadosAgenda.atividade,dadosAgenda.idusuario)
         this.claAgendaArmazenados.AdicionarAgenda(agenda)
         var retorno={
             id:agenda.id,
@@ -28,6 +31,8 @@ export class AgendaController{
     }
     @ApiResponse({status:200, description:"A operação foi um sucesso"})
     @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
+
+ // ====================================== //// ====================================== //// ====================================== //    
     @Put("/:id")
     async atualizaAgenda(@Param('id') id:string,@Body() novosDados:AlteraAgendaDTO){
         const AgendaAtualizado=await this.claAgendaArmazenados.atualizaAgenda(id, novosDados)
@@ -38,6 +43,8 @@ export class AgendaController{
     }
     @ApiResponse({status:200, description:"A operação foi um sucesso"})
     @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
+
+ // ====================================== //// ====================================== //// ====================================== //
     @Get()
     async RetornoAgenda(){
         const agendaListados=await this.claAgendaArmazenados.Agenda;
@@ -53,6 +60,8 @@ export class AgendaController{
     }
     @ApiResponse({status:200, description:"A operação foi um sucesso"})
     @ApiResponse({status:500, description:"Ocorreu um erro na operação! Tente novamente mais tarde"})
+
+ // ====================================== //// ====================================== //// ====================================== // 
     @Delete('/:id')
     async removeAgenda(@Param("id")id:string){
         const agendaRemovido=await this.claAgendaArmazenados.removeAgenda(id)
@@ -62,3 +71,4 @@ export class AgendaController{
         }
     } 
 }
+ // ====================================== //// ====================================== //// ====================================== //
