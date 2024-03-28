@@ -1,58 +1,66 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
+import { api } from "../../api";
 import BarraLateral from "../../Componentes/BarraLateral"
 import FuncaoCabecalho from "../../Componentes/Cabecalho"
 import "../../Componentes/estyle/estilonew.css" 
+import { UsuarioLogadoContext } from "../../contexts/contextAuth";
+
 
 function EntradaSaida(){
 
-    const [valorInput, setValorInput] = useState('');
-    const [booleanoInput, setBooleanoInput] = useState('');
-    const [history, setHistory] = useState([]);
-  
-    const handleSubmit = () => {
-      if (valorInput !== '' && booleanoInput !== '') {
-        const newEntry = `Valor: ${valorInput} | Tipo: ${booleanoInput}`;
-        // setHistory([...history, newEntry]);
-        setValorInput('');
-        setBooleanoInput('');   
-      } else {
-        alert('Por favor, preencha ambos os campos!');
-      }
-    };
+    const [operacao, setOperacao] = useState('');
+    const [valor, setValor] = useState('');    
+    const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
+    
 
-    return(
+  
+    const handleAddOperation = async () => {   
+
+        alert(operacao);
+        alert(valor);
+        alert(UsuarioLogadoCtx?.idusuario);
+   
+
+        // let json = await api.AdiconarOperacao(operacao, valor, idUsuario);
+        // alert(operacao);
+        // alert(valor);
+        // alert(UsuarioLogadoCtx?.idusuario);
+
+        // if (json.id) {
+        //     alert('Operação Adicionado com sucesso!')    
+
+        // } else {
+        //     alert('Falha ao adicionar Operação ' + json.message)
+        // }        
+    }  
+
+    return(           
         <div className="DivTela">
-            {/* <FuncaoCabecalho/> */}
+            <FuncaoCabecalho/>
             <div className="bodyy">
                 <BarraLateral/>
                 <div className="container">
                     <div className="input-section">
-                        <input
-                        type="number"
-                        placeholder="Digite um valor"
-                        value={valorInput}
-                        onChange={(e) => setValorInput(e.target.value)}
-                        />
-                        <select
-                        value={booleanoInput}
-                        onChange={(e) => setBooleanoInput(e.target.value)}
-                        >
+                        <select value={operacao} onChange={(e) => setOperacao(e.target.value)}>
                         <option value="">Selecione</option>
-                        <option value="Entrada">Entrada</option>
-                        <option value="Saida">Saida</option>
+                        <option value="true">Entrada</option>
+                        <option value="false">Saida</option>
                         </select>
-                        <button onClick={handleSubmit}>Enviar</button>
+                        
+                        <input type="currency" placeholder="Digite um valor" value={valor} onChange={(e) => setValor(e.target.value)}/>
+                        
+                        <button onClick={handleAddOperation}>Enviar</button>
                     </div>
                     <div className="history">
                         <p>Histórico:</p>
-                        {history.map((entry, index) => (
+                        {UsuarioLogadoCtx?.idusuario}
+                        {/* {history.map((entry, index) => (
                         <p key={index}>{entry}</p>
-                        ))}
+                        ))} */}
                     </div>
                 </div>
             </div>
-
-        </div>
+        </div>        
     )
 }
 export default EntradaSaida;

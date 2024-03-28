@@ -16,21 +16,20 @@ import Agenda from './Pages/Gerenciamento/Agenda';
 function App() {
   return (
     <div>
-
-    <UsuarioLogadoProvider>
-      <Routes>
-        <Route path='*' element={<NotFound/>}></Route>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/gov' element={<FuncaoGov/>}></Route>    
-        <Route path='/tutorial' element={<Tutorial/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/cadastro' element={<Cadastro/>}></Route>
-        <Route path='/Gerenciamento' element={<Gerenciamento/>}></Route>
-        <Route path='/Agenda' element={<Agenda/>}></Route>
-        <Route path='/AreaDeUsuario' element={<AreaDeUsuario/>}></Route>
-        <Route path='/EntradaSaida' element={<EntradaSaida/>}></Route>
-      </Routes>
-    </UsuarioLogadoProvider>
+      <UsuarioLogadoProvider>
+        <Routes>
+          <Route path='*' element={<NotFound/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/gov' element={<FuncaoGov/>}></Route>    
+          <Route path='/tutorial' element={<Tutorial/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/cadastro' element={<Cadastro/>}></Route>
+          <Route path='/Gerenciamento' element={<Gerenciamento/>}></Route>
+          <Route path='/Agenda' element={<Agenda/>}></Route>
+          <Route path='/AreaDeUsuario' element={<AreaDeUsuario/>}></Route>
+          <Route path='/EntradaSaida' element={<EntradaSaida/>}></Route>
+        </Routes>
+      </UsuarioLogadoProvider>
     </div>
   );
 }

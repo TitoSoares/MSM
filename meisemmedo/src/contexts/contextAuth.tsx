@@ -1,28 +1,22 @@
-import { createContext, ReactNode, useEffect, useState } from "react";
-
-type ContextType = {
-    name:string;
-    setName: (n:string) => void;
+import { ReactNode, createContext,useState } from "react";
+ 
+type ContextType = {    
+    idusuario:String;    
+    setIdUsuario: (n:string) => void;
 }
-
+ 
 export const UsuarioLogadoContext = createContext<ContextType | null>(null);
-
-export const UsuarioLogadoProvider = ({children}: {children: ReactNode}) => {
-
-    const[name, setName] = useState(() => {
-        const storedname = localStorage.getItem("ContextName")
-        return storedname ? storedname : "";
-    });
-
-    useEffect(() => {
-        if (name !== '') {
-            localStorage.setItem('ContextName', name);
-        }
-    } , [name])
-
+ 
+ 
+export const UsuarioLogadoProvider = ({ children}: {children: ReactNode}) => {
+ 
+    const[idusuario, setIdUsuario] = useState('');
+ 
     return (
-        <UsuarioLogadoContext.Provider value={{name, setName}}>
+        <UsuarioLogadoContext.Provider value={{idusuario, setIdUsuario}}>
             {children}
         </UsuarioLogadoContext.Provider>
     )
+ 
 }
+ 

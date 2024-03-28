@@ -1,13 +1,17 @@
 import { useContext, useState } from "react"
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import { api } from "../api";
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 import "../Componentes/estyle/estilonew.css"
 
 import { UsuarioLogadoContext } from "../contexts/contextAuth";
 
 function Login(){
+
+    const navigate = useNavigate();
     const[login,setLogin]=useState("")
     const[senha,setSenha]=useState("")
+    const [msgApi, setmsgApi] = useState('');
 
     function handleLoginInput(event: React.ChangeEvent<HTMLInputElement>) {
         setLogin(event.target.value);
@@ -18,12 +22,30 @@ function Login(){
 
     const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
 
-    const navigate = useNavigate();
+
+    const RealizarLogin = async () => {
+        {
+
+ 
+            let json = await api.Logar(login, senha);
+ 
+            if (json.status) {
+                alert('Bem vindo, ' + login);
+                UsuarioLogadoCtx?.setIdUsuario(json.usuario.id);
+                alert(UsuarioLogadoCtx?.idusuario)
+               
+                navigate('/Gerenciamento');
+            } else {
+                setmsgApi(json.message);
+            }        
+        }
+    }
+    
 
     const AcessoDireto = () => {
-    UsuarioLogadoCtx?.setName(login);
+     // UsuarioLogadoCtx?.setName(login);
        navigate('/Gerenciamento');
-     }
+    }
 
     return(
         <div className="DivTela">
@@ -56,7 +78,8 @@ function Login(){
 
                     <br />
                     <div className="DivBotoesLogin">
-                        <button className="ButtonLogin">Logar</button>
+                        <button className="ButtonLogin" onClick={RealizarLogin}>Logar</button> 
+                        {msgApi}
                         <button className="ButtonLogin" onClick={AcessoDireto}>Acesso</button>
                     </div>
 

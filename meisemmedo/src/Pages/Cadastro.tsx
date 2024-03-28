@@ -32,6 +32,8 @@ function Cadastro(){
         setSenhaConfirmacao(event.target.value);
     }
 
+    
+
     return(
 
         <div className="DivTela">

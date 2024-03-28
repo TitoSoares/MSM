@@ -93,14 +93,14 @@ export class UsuariosController{
 
         async Login(@Body() dadosUsuario:LoginUsuarioDTO){
 
-        var login = this.claUsuariosArmazenados.validarLogin(dadosUsuario.email,dadosUsuario.senha)
+            var login = this.claUsuariosArmazenados.validarLogin(dadosUsuario.email,dadosUsuario.senha)
 
-        return{
             
-            usuario: login[0],
-                status: login[1],
-                message: login[1] ? "Login efetuado" : "Usuario ou senha inválidos"
-            }
+                return{
+                    usuario: login[1] ? login[0] : null,
+                    status: login[1],
+                    message: login[1] ? "Login Efetuado" : "Usuario ou senha invalidos !"
+                }
         }
     // ====================================== //// ====================================== //// ====================================== // 
 }

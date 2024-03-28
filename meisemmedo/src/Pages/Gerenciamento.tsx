@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import FuncaoCabecalho from "../Componentes/Cabecalho";
 import "../Componentes/estyle/estilonew.css"
 
-
+import { UsuarioLogadoContext } from "../contexts/contextAuth";
 
 function Gerenciamento(){
+
+    const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
     
     return(
         <div className="DivTela">
@@ -11,7 +14,7 @@ function Gerenciamento(){
                 
             <div className="DivGerenciamento">
                 <a className="DivGen1" href="EntradaSaida">
-                    <h1>Entradas e Saidas</h1>
+                    <h1>Entradas e Saidas</h1>{UsuarioLogadoCtx?.idusuario}
                     <img className="imgGen" src="EntradaSaida_Gerenciamento.png"/>
                 </a>
 
